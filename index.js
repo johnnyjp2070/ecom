@@ -11,5 +11,9 @@ app.get('/', (req, res)=>{
 app.get('/about', (req, res)=>{
     res.render('about.ejs')
 })
-
+app.get('/api', (req, res)=>{
+    res.json({
+        name: 'Johnson'
+    })
+})
 app.listen(3000)
